@@ -67,3 +67,33 @@ my_list_two = [6, 7, 8, 9, 10]
 my_list_one.extend(my_list_two)
 
 # print(my_list_one)
+
+
+###########################
+# List lookups           #
+###########################
+
+friend_names = ["Nina", "Ramona", "John", "Nina"]
+
+# check if item exist in list
+# print("Nina" in friend_names)
+
+# check item index
+# print(friend_names.index("John"))
+
+# check how many time a value exist in a list
+# print(friend_names.count("Nina "))
+
+friend_names[0] = "Yemi"
+
+# print(friend_names)
+
+# find item position and change it's value
+johnPos = friend_names.index("John")
+
+friend_names[johnPos] = "Jane"
+
+# print(friend_names)
+
+# this will throw an error because specified position does not exist
+# friend_names[4] = "Pappy"
