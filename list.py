@@ -38,5 +38,32 @@ lottery_numbers.sort()
 lottery_numbers.reverse()
 # print(lottery_numbers)
 
-print(lottery_numbers.pop())
-print(len(lottery_numbers))
+# print(lottery_numbers.pop())
+# print(len(lottery_numbers))
+
+###########################
+# Adding items to list  #
+###########################
+
+# list
+shopping_list = ["Seasoning", "Tomato"]
+
+# add new item to a list
+shopping_list.append("Salt")
+
+# add new item to a specific position in list
+shopping_list.insert(0, "Oil")
+
+# remove item from a list
+del shopping_list[0]
+shopping_list.remove("Tomato")
+
+# print(shopping_list)
+
+# combining two list together
+my_list_one = [1, 2, 3, 4, 5]
+my_list_two = [6, 7, 8, 9, 10]
+
+my_list_one.extend(my_list_two)
+
+# print(my_list_one)
