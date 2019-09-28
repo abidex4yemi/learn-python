@@ -111,5 +111,5 @@ def calculate_numbers(x, y, operation="add"):
         return x - y
 
 
-print(calculate_numbers(2, 2))
-print(calculate_numbers(2, 2, "subtract"))
+# print(calculate_numbers(2, 2))
+# print(calculate_numbers(2, 2, "subtract"))
