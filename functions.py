@@ -56,3 +56,18 @@ def say_greeting_with_default_arg(name, greeting="Hello!"):
 
 def create_query(language="Javascript", num_stars=50, sort="desc"):
     return f"language: {language}, number of stars: {num_stars}, sort: {sort}"
+
+
+#   Empty default lists
+# Warning: don't do this! because the value in the list will not be discarded
+
+
+def cart(item, myList=[]):
+    myList.append(item)
+    return myList
+
+
+# print(cart("Rice"))
+# print(cart("Beans"))
+
+# function scope
