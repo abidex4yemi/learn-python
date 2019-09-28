@@ -66,8 +66,38 @@ def cart(item, myList=[]):
     myList.append(item)
     return myList
 
+# Do this
+
+
+def cart_two(item, myList=None):
+    if myList is None:
+        myList = []
+    myList.append(item)
+    return myList
+
+
+print(cart_two(item="Shoe"))
+print(cart_two(item="Cap", myList=["Shirt", "Trouser"]))
+
 
 # print(cart("Rice"))
 # print(cart("Beans"))
 
 # function scope
+
+
+def twitter_info(account="yemi"):
+    return f"Account inside the function is {account}"
+
+
+# print(twitter_info())
+
+name = "Jane"
+
+
+def try_change_name():
+    name = "Max"
+    return name
+
+
+# print(try_change_name())
