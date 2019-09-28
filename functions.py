@@ -76,8 +76,8 @@ def cart_two(item, myList=None):
     return myList
 
 
-print(cart_two(item="Shoe"))
-print(cart_two(item="Cap", myList=["Shirt", "Trouser"]))
+# print(cart_two(item="Shoe"))
+# print(cart_two(item="Cap", myList=["Shirt", "Trouser"]))
 
 
 # print(cart("Rice"))
@@ -101,3 +101,15 @@ def try_change_name():
 
 
 # print(try_change_name())
+
+
+# Positional arguments VS label arguments
+def calculate_numbers(x, y, operation="add"):
+    if operation == "add":
+        return x + y
+    if operation == "subtract":
+        return x - y
+
+
+print(calculate_numbers(2, 2))
+print(calculate_numbers(2, 2, "subtract"))
