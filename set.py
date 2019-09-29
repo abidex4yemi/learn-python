@@ -73,3 +73,46 @@ students.update(new_students)
 # the value will be splitted e.g "Yemi" => "Y", "e", "m", "i"
 students.update({"Tom", "Lola"})
 # print(students)
+
+# Reading value #
+
+# for friend in friends:
+#     print(friend)
+
+
+########################################
+# Combining, Comparing, contrasting  #
+########################################
+
+# Set operations
+
+# Comparing #
+#############
+
+colors = {"Red", "Green", "Blue", "Maroon"}
+
+# print("Red" in colors)
+# print("Yellow" in colors)
+
+# Combining #
+#############
+
+rainbow_colors = {"Red", "Orange", "Yellow", "Green", "Blue", "Violet"}
+favorite_colors = {"Pink", "Black", "Blue"}
+
+# my_set.union(other_set)
+all_colors = rainbow_colors.union(favorite_colors)
+# print(all_colors)
+
+# my_set | other_set
+all_colors = rainbow_colors | favorite_colors
+# print(all_colors)
+
+# Intersection
+common_values_between_two_set = rainbow_colors & favorite_colors
+
+# print(common_values_between_two_set)
+
+# Difference
+difference_between_two_set = rainbow_colors ^ favorite_colors
+# print(difference_between_two_set)
