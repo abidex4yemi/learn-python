@@ -75,6 +75,11 @@ my_list_one.extend(my_list_two)
 
 friend_names = ["Nina", "Ramona", "John", "Nina"]
 
+# slice method in python
+print(friend_names[:2])
+print(friend_names[3:])
+print(friend_names[:])
+
 # check if item exist in list
 # print("Nina" in friend_names)
 
