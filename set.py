@@ -32,4 +32,44 @@ friends = {"Yemi", "Jane", "Yemi", "Lola"}
 # print(friends)
 
 # We can check for hash of a specific value
-print(hash("John"))
+# print(hash("John"))
+
+########################################
+# Adding, removing, updating in set()  #
+########################################
+
+# Adding #
+
+colors = {"Red", "Green", "Blue"}
+# print(colors)
+
+colors.add("Yellow")
+# print(colors)
+
+# Removing #
+
+# Major difference between discard() and remove is if
+# value does not exist when using discard() it does not throw error
+# but remove() will throw error
+# colors.remove("red")
+
+colors.remove("Red")
+# print(colors)
+
+colors.discard("Green")
+# print(colors)
+
+# Updating #
+
+students = {"Shola", "Jane"}
+
+new_students = {"Lee", "John", "Nina"}
+
+students.update(new_students)
+
+# print(students)
+
+# Note: update() expect sequence if passed commam separated values
+# the value will be splitted e.g "Yemi" => "Y", "e", "m", "i"
+students.update({"Tom", "Lola"})
+# print(students)
