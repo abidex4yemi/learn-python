@@ -19,6 +19,7 @@ names = ["Nina", "Max", "Yemi", "Rose"]
 ###############################
 
 lottery_numbers = [20, 30, 50, 60, 200, 120]
+print(lottery_numbers.pop())
 
 # There are two ways of sorting in python
 
@@ -38,7 +39,6 @@ lottery_numbers.sort()
 lottery_numbers.reverse()
 # print(lottery_numbers)
 
-# print(lottery_numbers.pop())
 # print(len(lottery_numbers))
 
 ###########################
