@@ -17,7 +17,8 @@ def repo_with_most_stars(url, query="stars:>50000", sort="stars", order="asc"):
     status_code = response.status_code
 
     if status_code != 200:
-        raise RuntimeError("An error ocurred when fetching list of repo")
+        raise RuntimeError(
+            f"An error ocurred when fetching list of repo. status code is {status_code}")
     else:
         repo = response.json()
 
