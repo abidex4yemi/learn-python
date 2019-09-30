@@ -44,7 +44,13 @@ print("Please choose one of the choices below to continue...")
 computer = random.randint(1, 3)
 
 # Reading user input from commandline
-user = int(input("[1] Rock  [2] Paper  [3] Scissors      [9] Quit\n"))
+
+try:
+    user = int(input("[1] Rock  [2] Paper  [3] Scissors      [9] Quit\n"))
+
+except ValueError:
+    print("value must be integer e.g [1-3]")
+    user = input("[1] Rock  [2] Paper  [3] Scissors      [9] Quit\n")
 
 # Game loop
 while not user == 9:
@@ -97,7 +103,12 @@ while not user == 9:
     # Prompt user to make another selection
     print("Please choose to continue ):")
     computer = random.randint(1, 3)
-    user = int(input("[1] Rock  [2] Paper  [3] Scissors      [9] Quit\n"))
+    try:
+        user = int(input("[1] Rock  [2] Paper  [3] Scissors      [9] Quit\n"))
+
+    except ValueError:
+        print("value must be integer e.g [1-3]")
+        user = input("[1] Rock  [2] Paper  [3] Scissors      [9] Quit\n")
 
 # Outside will loop game over
 # Print game statistics
