@@ -6,8 +6,13 @@ import random
 def load_results():
     try:
         text_file = open("history.txt", "r")
-        history = text_file.read().split(",")
-        print(history)
+        history = text_file.read()
+        print("""
+            --------------------
+            |   Game over      |
+            --------------------
+        """)
+        print(f"Game score: {history}\n\n\n\n")
         text_file.close()
 
         return history
@@ -78,6 +83,8 @@ while not user == 9:
         else:
             print("Computer chose scissors...tie!")
             ties += 1
+    else:
+        print("Invalid selection please try again")
 
     # print updated statistics
     print("Wins: %s, Ties: %s, Losses: %s" % (wins, ties, losses))

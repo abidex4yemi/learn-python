@@ -1,1 +1,1 @@
-Wins: 3, Ties: 6, Losses: 2
+Wins: 8, Ties: 4, Losses: 15
