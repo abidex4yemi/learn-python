@@ -20,10 +20,6 @@ class Car:
     def __repr__(self):
         return f"Car {self.name}"
 
-    @classmethod
-    def get_number_of_wheels(cls):
-        print(cls.number_of_wheels)
-
 
 my_toyota = Car("Toyota")
 print(str(my_toyota))
